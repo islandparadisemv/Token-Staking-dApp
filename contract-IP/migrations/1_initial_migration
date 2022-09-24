@@ -1,0 +1,6 @@
+var IP = artifacts.require("IP");
+
+module.exports = function(deployer) {
+  // deployment steps
+  deployer.deploy(IP);
+};

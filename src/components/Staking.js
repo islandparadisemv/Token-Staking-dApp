@@ -21,7 +21,7 @@ const Staking = (props) => {
   return (
     <div className={classes.Staking}>
       <img src={icon} alt="logo" className={classes.icon} />
-      <h1> Yield Farming / Token Staking dApp</h1>
+      <h1> Island Paradise $IP Staking dApp</h1>
       <p>{props.account}</p>
       <h3>
         {props.apy}% (APY) - {props.apy / 365}% Daily Earnings
@@ -57,16 +57,16 @@ const Staking = (props) => {
       </button>
       <div className={classes.totals}>
         <h4>
-          Total Staked (by all users): {props.totalStaked} TestToken (Tst)
+          Total Staked (by all users): {props.totalStaked} Island Paradise Token ($IP)
         </h4>
         <div>&nbsp;</div>
-        <h5>My Stake: {props.myStake} TestToken (Tst) </h5>
+        <h5>My Stake: {props.myStake} Island Paradise Token ($IP) </h5>
         <h5>
           My Estimated Reward:{' '}
-          {((props.myStake * props.apy) / 36500).toFixed(3)} TestToken (Tst)
+          {((props.myStake * props.apy) / 36500).toFixed(3)} Island Paradise Token ($IP)
         </h5>
         <h5 onClick={goMax} className={classes.goMax}>
-          My balance: {props.userBalance} TestToken (Tst)
+          My balance: {props.userBalance} Island Paradise Token ($IP)
         </h5>
       </div>
     </div>
